@@ -1,6 +1,10 @@
 import { BsCheckCircle } from "react-icons/bs";
 
-export default function FormSuccess({ message }: { message: string }) {
+export default function FormSuccess({
+	message,
+}: {
+	message: string | undefined;
+}) {
 	if (!message) return null;
 
 	return (

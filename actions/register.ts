@@ -1,10 +1,10 @@
 "use server";
 
 import * as z from "zod";
-import { LoginSchema } from "@/schemas";
+import { RegisterSchema } from "@/schemas";
 
-export default async function login(values: z.infer<typeof LoginSchema>) {
-  const sanitizedValues = LoginSchema.safeParse(values);
+export default async function register(values: z.infer<typeof RegisterSchema>) {
+  const sanitizedValues = RegisterSchema.safeParse(values);
 
   if(!sanitizedValues.success) {
     return {

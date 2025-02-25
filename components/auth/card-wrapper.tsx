@@ -36,7 +36,7 @@ export default function CardWrapper({
 				</CardFooter>
 			)}
 			<CardFooter>
-				<CardBackButton href="/auth/register" label={backButtonText} />
+				<CardBackButton href={backButtonHref} label={backButtonText} />
 			</CardFooter>
 		</Card>
 	);
